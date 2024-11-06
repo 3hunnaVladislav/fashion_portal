@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Модний Портал</title>
+</head>
+<body>
+    <header>
+        <h1>Модний Портал</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('designers') }}">Дизайнери</a></li>
+                <li><a href="{{ url_for('collections') }}">Колекції</a></li>
+                <li><a href="{{ url_for('shows') }}">Покази</a></li>
+                <li><a href="{{ url_for('reviews') }}">Відгуки</a></li>
+                <li><a href="{{ url_for('blog') }}">Блог</a></li>
+                <li><a href="{{ url_for('consultation') }}">Консультація</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                    {% for message in messages %}
+                        <li>{{ message }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        {% block content %}{% endblock %}
+    </main>
+    <footer>
+        <p>&copy; 2024 Модний Портал</p>
+    </footer>
+</body>
+</html>

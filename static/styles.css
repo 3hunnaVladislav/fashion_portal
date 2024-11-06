@@ -1,0 +1,169 @@
+/* Загальні стилі */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black; /* Зміна кольору тексту на чорний */
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #f0f0f0; /* Світлий фон для кращого контрасту */
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #ddd; /* Трохи темніше тло при наведенні */
+    text-decoration: none;
+}
+
+
+/* Основний контент */
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Форми */
+form {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea,
+form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Стили для сторінки консультації */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/* Список дизайнерів */
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+ul li img {
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 100px; /* Змінити на потрібний розмір */
+    height: auto; /* Зберігає пропорції */
+}
+
+/* Висновок */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}

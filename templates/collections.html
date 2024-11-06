@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Колекції</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        .collection-item {
+            background-color: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Колекції</h1>
+    {% for collection in collections %}
+        <div class="collection-item">
+            <h2>{{ collection.name }}</h2>
+            <p><strong>Дизайнер:</strong> {{ collection.designer }}</p>
+            <p><strong>Опис:</strong> {{ collection.description }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
